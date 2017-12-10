@@ -1,7 +1,6 @@
-class CreateBusinesses < ActiveRecord::Migration
+class CreateBusinessAlerts < ActiveRecord::Migration
   def change
-    create_table :businesses do |t|
-      t.string :alerts
+    create_table :business_alerts do |t|
       t.date :date
       t.string :title
       t.text :detail

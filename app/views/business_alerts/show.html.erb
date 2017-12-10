@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @business_alert.date %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @business_alert.title %>
+</p>
+
+<p>
+  <strong>Detail:</strong>
+  <%= @business_alert.detail %>
+</p>
+
+<%= link_to 'Edit', edit_business_alert_path(@business_alert) %> |
+<%= link_to 'Back', business_alerts_path %>

@@ -1,0 +1,2 @@
+module BusinessAlertsHelper
+end

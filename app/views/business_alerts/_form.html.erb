@@ -1,20 +1,16 @@
-<%= form_for(@business) do |f| %>
-  <% if @business.errors.any? %>
+<%= form_for(@business_alert) do |f| %>
+  <% if @business_alert.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@business.errors.count, "error") %> prohibited this business from being saved:</h2>
+      <h2><%= pluralize(@business_alert.errors.count, "error") %> prohibited this business_alert from being saved:</h2>
 
       <ul>
-      <% @business.errors.full_messages.each do |msg| %>
+      <% @business_alert.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :alerts %><br>
-    <%= f.text_field :alerts %>
-  </div>
   <div class="field">
     <%= f.label :date %><br>
     <%= f.date_select :date %>
